@@ -4,7 +4,7 @@ FROM alpine:3.1
 
 MAINTAINER Manuel Weidmann <weidmann.manuel@gmail.com>
 
-RUN apk add --update openjdk7 && rm -rf /var/cache/apk/*
+RUN apk add --update openjdk7 ca-certificates && rm -rf /var/cache/apk/*
 RUN wget http://ftp.fau.de/apache/maven/maven-3/3.3.1/binaries/apache-maven-3.3.1-bin.tar.gz
 RUN tar -zxvf apache-maven-3.3.1-bin.tar.gz
 RUN rm apache-maven-3.3.1-bin.tar.gz
