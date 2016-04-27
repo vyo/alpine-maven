@@ -13,6 +13,6 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.7-openjdk
 ENV JAVA=$JAVA_HOME/bin
 ENV M2_HOME=/usr/lib/mvn
 ENV M2=$M2_HOME/bin
-ENV PATH $PATH:$$JAVA_HOME:$JAVA:$M2_HOME:$M2
+ENV PATH $PATH:$JAVA_HOME:$JAVA:$M2_HOME:$M2
 
 CMD ["mvn --version"]
